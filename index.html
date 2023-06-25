@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="CSS/css.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container position-relative vw-100 vh-100">
+      <div class="box position-absolute top-50 start-50 translate-middle px-4">
+        <div class="input-date row p-4 d-flex flex-nowrap">
+          <div class="col day">
+            <p class="m-1">DAY</p>
+            <input type="text" class="py-2" placeholder="DD"/>
+            <p class="validDay">Must be a valid day</p>
+          </div>
+          <div class="col month">
+            <p class="m-1">MONTH</p>
+            <input type="text" class="py-2" placeholder="MM"/>
+            <p class="validMonth">Must be a valid month</p>
+          </div>
+          <div class="col year">
+            <p class="m-1">YEAR</p>
+            <input type="text" class="py-2" placeholder="YYYY"/>
+            <p class="validYear">Must be a valid year</p>
+          </div>
+        </div>
+        <div class="arrow d-flex position-relative p-3">
+          <img
+            src="assets/images/icon-arrow.svg"
+            alt=""
+            class="mx-sm-auto ms-md-auto rounded-circle p-3 show"
+          />
+        </div>
+        <div class="result  pe-5">
+          <p><span class="yearResult">--</span> years</p>
+          <p><span class="monthResult">--</span>months</p>
+          <p><span class="dayResult">--</span>days</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js.map"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
